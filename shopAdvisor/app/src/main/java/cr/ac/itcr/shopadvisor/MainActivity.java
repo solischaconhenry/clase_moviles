@@ -8,7 +8,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.View;
-import android.view.Menu;
 import android.view.MenuItem;
 
 public class MainActivity extends AppCompatActivity {
@@ -25,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Snackbar.make(view, "asd", Snackbar.LENGTH_LONG)
                         .setAction("Action", null).show();
-                Intent i =  new Intent(MainActivity.this,Dashboard.class);
+                Intent i =  new Intent(MainActivity.this,DashboardTest.class);
                 i.putExtra("message","data1");
                 startActivity(i);
             }
